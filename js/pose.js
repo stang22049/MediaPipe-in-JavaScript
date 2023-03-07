@@ -58,6 +58,9 @@ function onResultsPose(results) {
           .map(index => results.poseLandmarks[index]),
       {color: zColor, fillColor: '#AAAAAA'});
   canvasCtx5.restore();
+
+  console.log(results.poseLandmarks[12])
+  //console.log(Object.values(POSE_LANDMARKS_LEFT))
 }
 
 const pose = new Pose({locateFile: (file) => {
